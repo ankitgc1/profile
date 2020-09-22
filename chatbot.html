@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Project</title>
+  </head>
+  <body>
+
+    <div id="menu" class="sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler mx-auto border-warning" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item mx-auto">
+              <a class="nav-link" href="Index.html">Home</a>
+            </li>
+            <li class="nav-item mx-auto">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item mx-auto">
+              <a class="nav-link" href="#">Resume</a>
+            </li>
+            <li class="nav-item mx-auto">
+              <a class="nav-link" href="#social">Social</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    </div>
+    <div class="container">
+      <hr>
+
+      <h4 class="text-center my-4">Chatbot</h4>
+      <div class="d-flex justify-content-center my-3">
+        <img src="images/Chatbot.png" style="height:300px; width:300px;" alt="Picture of a conversation with chappie">
+      </div>
+      <div class="discription">
+        <p>The chatbot is an A.I. powered software. A chatbot is often described as one of the most advanced and promising expressions of
+          interaction between humans and machines. However, from a technological point of view, a chatbot only represents the natural evolution of
+          a Question-Answering system leveraging Natural Language Processing (NLP).</p>
+        <p>Sequence-to-sequence (seq2seq) models (Sutskever et al., 2014, Cho et al., 2014) have enjoyed great success in a variety of tasks such as machine
+          translation, speech recognition, and text summarization. This chatbot is based on seq2seq neural network with an attention mechanism.
+          The GRU(Gated recurrent unit) cell is being used in the seq2seq NN. For the word embedding, Glove pretrained model is being used.</p>
+        <p>The Chatbot.py have Data preprocessing, Word embedding, Training, Evolution all the parts. I trained for three days on RTX2080ti on my own
+          collected dataset and the results are pretty good. Change the parameter according to your machine configuration. The seq2seq model used the
+          GRU(Gated recurrent unit) layer. For the word embedding layer glove.6B.100d model is being used. After that encoder's output pass to the decoder.
+          "Teacher forcing algorithm" - feeding the target as the next input. For the prediction "Greedy search algorithm" is being used.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+
+      <hr>
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>
