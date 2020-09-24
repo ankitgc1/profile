@@ -20,7 +20,10 @@ body{
     /* border: yellow 3px solid; */
     box-shadow: 2px 2px 5px 5px #8ba020,-2px -2px 5px 5px #8ba020;
   }
-
+.category{
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
 .card{
     background-color: #3c3939;
     border: none;
@@ -28,7 +31,7 @@ body{
     box-shadow: 2px 2px 8px 3px #929191,-2px -2px 8px 3px #929191;
 }
 .card:hover{
-    box-shadow: 2px 2px 5px 5px #8ba020,-2px -2px 5px 5px #8ba020;
+    box-shadow: 2px 2px 5px 5px #64b3b0,-2px -2px 5px 5px #64b3b0;
 
 }
 .card-img{
@@ -41,6 +44,12 @@ a{
 a:hover,
 .navbar-dark .navbar-nav .nav-link:hover{
   color: yellow;
+}
+.card-title{
+  display:block;
+  color: #eb5b34;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 @media (max-width: 992px){
   #intro{
